@@ -1,928 +1,779 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>GeNext Awards</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Template by CocoBasic" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-        <meta name="author" content="CocoBasic" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Home | Edison</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
 
-        <link rel="shortcut icon" href="images/favicon.ico" />    
-        <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
-        <link rel="stylesheet" type="text/css"  href='style.css' />
-
-        <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>            
-                <script src="js/respond.min.js"></script>                   
-        <![endif]-->         
+        <link rel="stylesheet" href="css/index.min.css" />
     </head>
-
-    <body class="page-template-onepage">
-
-        <div class="site-wrapper">   
-
-            <div class="doc-loader">
-                <img src="images/preloader.gif" alt="Seppo">
-            </div>       
-
-            <header class="header-holder">             
-                <div class="menu-wrapper center-relative relative">             
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="Seppo">
-                        </a>               
-                    </div>
-
-                    <div class="toggle-holder">
-                        <div id="toggle">
-                            <div class="first-menu-line"></div>
-                            <div class="second-menu-line"></div>
-                            <div class="third-menu-line"></div>
-                        </div>
-                    </div>
-
-                    <div class="menu-holder">
-                        <nav id="header-main-menu">
-                            <ul class="main-menu sm sm-clean">
-                                <li>
-                                    <a href="#home">Home</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#about">About</a>
-                                </li>
-                                <li>
-                                    <a href="#team">Team</a>
-                                </li>
-                               
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>
-
-                                <li>
-                                    <a href="categories.html">Categories</a>
-                                </li>
-
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-                            </ul>
-                        </nav>                       
-                    </div>
-                    <div class="clear"></div>   
+    <body>
+        <div class="promobar d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+                <ul class="promobar_socials d-flex align-items-center">
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="promobar_main d-flex align-items-center">
+                    <p class="promobar_main-text">Try for free! <span class="hide">30 day Trial and Free Lectures</span></p>
+                    <a class="btn btn--yellow" href="#" id="signUpTrigger">
+                        <span>Sign Up</span>
+                    </a>
                 </div>
-            </header>                  
-
-            <div id="content" class="site-content center-relative">        
-
-                <!-- Home Section -->
-                <div id="home" class="section no-page-title">                   
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">                           
-                            <h1 class="big-text">
-                                The GeNext <br>                               
-                                Awards 2022
-                            </h1>
-                            <div class="button-holder text-left">
-                                <a href="#portfolio" class="button">LEARN MORE</a>
-                            </div>
-                        </div>                        
-                    </div>
-                </div> 
-
-                <!-- Services Section -->
-                <!-- <div id="services" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            SERVICES             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-
-                            <div class="one_third ">
-                                <div class="service-holder">
-                                    <p class="service-num">1</p>
-                                    <div class="service-txt">
-                                        <h4>Preciese</h4>
-                                        <p>
-                                            Curabitur cursus mattis ligula a maximus pellentesque in purus malesuada pharetra eros.
-                                        </p>
-                                        <br>
-                                        <div class="button-holder text-left">
-                                            <a href="#portfolio" class="button-dot">
-                                                <span>MORE</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="one_third ">
-                                <div class="service-holder">
-                                    <p class="service-num">2</p>
-                                    <div class="service-txt">
-                                        <h4>Support</h4>
-                                        <p>
-                                            Est sem integer suscipit enim quis dictum feugiat etiam pellentesque curabitur donec porttitor.
-                                        </p>
-                                        <br>
-                                        <div class="button-holder text-left">
-                                            <a href="#news" class="button-dot">
-                                                <span>MORE</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="one_third last">
-                                <div class="service-holder">
-                                    <p class="service-num">3</p>
-                                    <div class="service-txt">
-                                        <h4>Responsive</h4>
-                                        <p>
-                                            Donec vel est sem integer suscipit enim quis lorem posuere vestibulum metus tempor vitae.
-                                        </p>
-                                        <br>
-                                        <div class="button-holder text-left">
-                                            <a href="#contact" class="button-dot">
-                                                <span>MORE</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>    
-                            <div class="clear"></div>
-                        </div>                        
-                    </div>
-                </div> -->
-
-                <!-- About Section -->
-                <div id="about" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            ABOUT             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-
-                            <div class="one_half">
-                                <p class="title-description-up">
-                                    About
-                                </p>
-                                <h2 class="entry-title medium-text">
-                                    Live up to <br> 
-                                    your creative potential.
-                                </h2>
-                                <p>
-                                    Code the energy hidden in matter citizens of distant epochs from which we spring drake equation perga inconspicuous motespatch clean designed code and energy matter.
-                                </p>
-                                <br>
-                                <div class="button-holder text-left">
-                                    <a href="#portfolio" class="button">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="one_half last" data-threshold="0 0" data-jarallax-element="120 0">
-                                <img src="images/about_01.jpg" alt="" />                     
-                            </div>
-                            <div class="clear"></div>
-                        </div>                        
-                    </div>
-                </div> 
-
-                <!-- Clients Section -->
-                <!-- <div id="clients" class="section no-page-title">                   
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <div class="one" data-threshold="0 0" data-jarallax-element="120 0">
-                                <script>
-                                    var textSlider_speed = "2000";
-                                    var textSlider_auto = "true";
-                                    var textSlider_hover = "true";
-                                </script>
-
-                                <div class="text-slider-wrapper relative">
-                                    <div class="text-slider-header-quotes"></div>
-                                    <div id="textSlider" class="text-slider slider owl-carousel owl-theme">
-
-                                        <div class="text-slide">
-                                            <p class="text-slide-content">
-                                                Curabitur cursus mattis ligula a maximus pellentesque in purus malesuada, pharetra eros id, malesuada diam vivamus eu gravida lacus nulla at consectetur quam vestibulum ac arcu sed.
-                                            </p>
-                                            <img class="text-slide-img" src="images/quote_image_03.jpg" alt="">
-                                            <p class="text-slide-name">Jane Williams</p>
-                                            <p class="text-slide-position">DESIGNER</p>
-                                        </div>
-
-                                        <div class="text-slide">
-                                            <p class="text-slide-content">
-                                                Vivamus quis ante varius, pretium lectus ut, tempor eros maecenas vitae purus lobortis, pulvinar lorem eu, porta elit suspendisse blandit porta magna, nec scelerisque urna viverra lorem gravida.
-                                            </p>
-                                            <img class="text-slide-img" src="images/quote_image_04.jpg" alt="">
-                                            <p class="text-slide-name">John Smith</p>
-                                            <p class="text-slide-position">GURU</p>
-                                        </div>
-
-                                        <div class="text-slide">
-                                            <p class="text-slide-content">
-                                                Suspendisse enim erat, vehicula sit amet odio eu, congue gravida magna mauris a ex aliquam, ornare tortor sit amet, placerat ante aenean sit amet sem et metus elementum pellentesque.
-                                            </p>
-                                            <img class="text-slide-img" src="images/quote_image_02.jpg" alt="">
-                                            <p class="text-slide-name">Peter Hall</p>
-                                            <p class="text-slide-position">CEO</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="clear"></div>                                        
-                                </div>                    
-                            </div>                            
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News Section -->
-                <!-- <div id="news" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            NEWS             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <div class="blog-holder-scode latest-posts-scode block center-relative">
-
-                                <article class="relative blog-item-holder-scode">
-                                    <div class="post-thumbnail">
-                                        <a href="single.html">
-                                            <div class="latest-posts-background-featured-image-holder" data-background-image="images/blog_img_01.jpg"></div>
-                                        </a>                                            
-                                    </div>
-                                    <h4 class="entry-title">
-                                        <a href="single.html">
-                                            How to write rogue mote of dust love
-                                        </a>
-                                    </h4>
-                                    <div class="excerpt">
-                                        Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death ...
-                                    </div>
-                                </article>
-
-                                <article class="relative blog-item-holder-scode">
-                                    <div class="post-thumbnail">
-                                        <a href="single.html">
-                                            <div class="latest-posts-background-featured-image-holder" data-background-image="images/blog_img_02.jpg"></div>
-                                        </a>                                           
-                                    </div>
-                                    <h4 class="entry-title">
-                                        <a href="single.html">
-                                            Epochs encyclopa galactica stellar
-                                        </a>
-                                    </h4>
-                                    <div class="excerpt">
-                                        Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death ...
-                                    </div>
-                                </article>
-
-                                <article class="relative blog-item-holder-scode">
-                                    <div class="post-thumbnail">
-                                        <a href="single.html">
-                                            <div class="latest-posts-background-featured-image-holder" data-background-image="images/blog_img_03.jpg"></div>
-                                        </a>                                           
-                                    </div>
-                                    <h4 class="entry-title">
-                                        <a href="single.html">
-                                            How to write rogue mote of dust love
-                                        </a>
-                                    </h4>
-                                    <div class="excerpt">
-                                        Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death ...
-                                    </div>
-                                </article>                                                                    
-                            </div>
-                            <br>
-                            <div class="button-holder center-text">
-                                <a href="blog.html" class="button">
-                                    GO TO BLOG
-                                </a>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div> -->
-
-
-                <!-- Portfolio Section -->
-                <!-- <div id="portfolio" class="section no-padding">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            PORTFOLIO                        
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <div id="portfolio-wrapper">
-                                <div class="portfolio-load-content-holder"></div>
-                                <div class="grid" id="portfolio-grid">
-                                    <div class="grid-sizer"></div>
-
-                                    <div id="p-item-1" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-1.html" data-id="1">
-                                            <img src="images/portfolio_item_01.jpg" alt="" />
-                                            <div class="portfolio-text-holder">
-                                                <p class="portfolio-desc">INTERIOR</p>
-                                                <p class="portfolio-title">Living Room</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div id="p-item-2" class="grid-item element-item p_one_half">
-                                        <a class="item-link ajax-portfolio" href="portfolio-2.html" data-id="2">
-                                            <img src="images/portfolio_item_02.jpg" alt="" />
-                                            <div class="portfolio-text-holder">
-                                                <p class="portfolio-desc">FASHION</p>
-                                                <p class="portfolio-title">Modeling</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div id="p-item-3" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-3.html" data-id="3">
-                                            <img src="images/portfolio_item_03.jpg" alt="" />
-                                            <div class="portfolio-text-holder">
-                                                <p class="portfolio-desc">CREATIVE</p>
-                                                <p class="portfolio-title">Psd Mockup</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div id="p-item-4" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-4.html" data-id="4">
-                                            <img src="images/portfolio_item_04.jpg" alt="" />
-                                            <div class="portfolio-text-holder">
-                                                <p class="portfolio-desc">ARCHITECTURE</p>
-                                                <p class="portfolio-title">Pillars</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>                           
-                        </div>                        
-                    </div>
-                </div>  -->
-
-                <!-- Pricing Section -->
-                <!-- <div id="pricing" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            PRICING             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-
-                            <div class="one_third">
-                                <div class="pricing-table ">
-                                    <p class="pricing-num">1</p>
-                                    <div class="pricing-wrapper">                   
-                                        <div class="pricing-table-header">
-                                            <div class="pricing-table-title">BASIC</div>                                                
-                                        </div>
-                                        <div class="pricing-table-price">$25</div>
-                                        <div class="pricing-table-desc">PER MONTH</div>
-                                        <div class="pricing-table-content-holder">  
-                                            <ul>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Unlimited Support
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    5GB Server Space
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    2 Users per Project
-                                                </li>
-                                                <li class="pricing-list included-no">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Email Integration
-                                                </li>
-                                                <li class="pricing-list included-no">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Unlimited Download
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="#" class="button scroll">
-                                            CHOOSE PLAN
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="one_third">
-                                <div class="pricing-table ">
-                                    <p class="pricing-num">2</p>
-                                    <div class="pricing-wrapper">                   
-                                        <div class="pricing-table-header">
-                                            <div class="pricing-table-title">ADVANCED</div>                                                
-                                        </div>
-                                        <div class="pricing-table-price">$50</div>
-                                        <div class="pricing-table-desc">PER MONTH</div>
-                                        <div class="pricing-table-content-holder">  
-                                            <ul>                                                 
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Unlimited Support
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    5GB Server Space
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    2 Users per Project
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Email Integration
-                                                </li>
-                                                <li class="pricing-list included-no">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Unlimited Download
-                                                </li>
-                                            </ul>                                            
-                                        </div>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="#" class="button scroll">
-                                            CHOOSE PLAN
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="one_third last">
-                                <div class="pricing-table ">
-                                    <p class="pricing-num">3</p>
-                                    <div class="pricing-wrapper">                   
-                                        <div class="pricing-table-header">
-                                            <div class="pricing-table-title">EXPERT</div>                                                
-                                        </div>
-                                        <div class="pricing-table-price">$75</div>
-                                        <div class="pricing-table-desc">PER MONTH</div>
-                                        <div class="pricing-table-content-holder">  
-                                            <ul>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Unlimited Support
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    5GB Server Space
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    2 Users per Project
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Email Integration
-                                                </li>
-                                                <li class="pricing-list included-yes">
-                                                    <span class="fa fa-check" aria-hidden="true"></span>
-                                                    Unlimited Download
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="#" class="button scroll">
-                                            CHOOSE PLAN
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>                        
-                    </div>
-                </div>  -->
-
-                <!-- Team Section -->
-                <div id="team" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            TEAM             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <div class="member member-left">
-                                <img src="images/about_item_01.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0">
-                                <div class="member-info">
-                                    <p class="member-postition">CEO</p>
-                                    <h5 class="member-name">Marty Stone</h5>
-                                    <div class="member-content">
-                                        <p>
-                                            Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
-                                        </p>
-                                        <div class="member-social-holder" data-jarallax-element="0 30">
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-facebook"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-twitter"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-instagram"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-vimeo"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-behance"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
-
-                            <div class="member big-screen member-right">
-                                <div class="member-info">
-                                    <p class="member-postition">DESIGNER</p>
-                                    <h5 class="member-name">John Williams</h5>
-                                    <div class="member-content">
-                                        <p>
-                                            Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
-                                        </p>
-                                        <div class="member-social-holder" data-jarallax-element="0 -30">
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-facebook"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-twitter"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-instagram"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-vimeo"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-behance"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="images/about_item_02.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0" />
-                            </div>
-
-                            <br>
-
-                            <div class="member member-left">
-                                <img src="images/about_item_03.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0" />
-                                <div class="member-info">
-                                    <p class="member-postition">DEVELOPER</p>
-                                    <h5 class="member-name">Vanessa Doe</h5>
-                                    <div class="member-content">
-                                        <p>
-                                            Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
-                                        </p>
-                                        <div class="member-social-holder" data-jarallax-element="0 30">
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-facebook"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-twitter"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-instagram"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-vimeo"></span>
-                                                </a>
-                                            </div>
-                                            <div class="social">
-                                                <a href="#" target="_blank">
-                                                    <span class="fa fa-behance"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </div> 
-
-                <!-- Skills Section -->
-                <!-- <div id="skills" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            SKILLS             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-
-                            <div class="one_half ">
-                                <p class="title-description-up">
-                                    OUR NUMBERS
-                                </p>
-                                <h2 class="entry-title medium-text">
-                                    Check our <br>
-                                    Skills
-                                </h2>
-                                <p>
-                                    Code the energy hidden in matter citizens of distant epochs from which we spring drake equation perga inconspicuous motespatch clean designed code and energy matter.
-                                </p>
-                                <br>
-                                <div class="button-holder text-left">
-                                    <a href="#portfolio" class="button">LEARN MORE</a>
-                                </div>
-                            </div>
-
-                            <div class="one_half last">
-                                <div class="skills-holder">
-
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">75%</div>
-                                        <div class="skill-text">
-                                            <span>Creativity</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="75%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
-
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">45%</div>
-                                        <div class="skill-text">
-                                            <span>Cooking</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="45%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
-
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">90%</div>
-                                        <div class="skill-text">
-                                            <span>PhP</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="90%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
-
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">65%</div>
-                                        <div class="skill-text">
-                                            <span>Marketing</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="65%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
-
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">85%</div>
-                                        <div class="skill-text">
-                                            <span>Design</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="85%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>                        
-                    </div>
-                </div>  -->
-
-                <!-- Millstones Section -->
-                <!-- <div id="millstones" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            MILESTONES             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <ul class="milestones-holder">
-
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">135</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Terabytes of files uploaded</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">67K</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Lines of CSS code wrote</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">74</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Cups of coffee drinked per week</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">389</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Happy clients served this year</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>                        
-                    </div>
-                </div>  -->
-
-                <!-- Contact Section -->
-                <div id="contact" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            CONTACT             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <div class="one_half ">
-                                <p class="title-description-up">CONTACT US</p>
-                                <h2 class="entry-title medium-text">
-                                    Lets start <br>
-                                    Working
-                                </h2>
-                                <p>
-                                    Because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept one we are.
-                                </p>
-                                <br>
-                                <div class="social">
-                                    <a href="#" target="_blank">
-                                        <span class="fa fa-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="#" target="_blank">
-                                        <span class="fa fa-twitter"></span>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="#" target="_blank">
-                                        <span class="fa fa-instagram"></span>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="#" target="_blank">
-                                        <span class="fa fa-vimeo"></span>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="#" target="_blank">
-                                        <span class="fa fa-behance"></span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="one_half last ">
-                                <div class="contact-form">
-                                    <p>
-                                        <input id="name" type="text" name="your-name" placeholder="Name">
-                                    </p>
-                                    <p>
-                                        <input id="contact-email" type="email" name="your-email" placeholder="Email">
-                                    </p>                                    
-                                    <p>
-                                        <input id="subject" type="text" name="your-subject" placeholder="Subject">
-                                    </p>
-                                    <p>
-                                        <textarea id="message" name="your-message" placeholder="Message"></textarea>
-                                    </p>
-                                    <p class="contact-submit-holder">
-                                        <input type="submit" value="SEND">
-                                    </p>  
-                                </div>
-                            </div>                            
-                            <div class="clear"></div>
-
-                            <p>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649" width="600" height="450" allowfullscreen="allowfullscreen"></iframe>
-                            </p>
-
-                        </div>                        
-                    </div>
-                </div> 
             </div>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="footer-content center-relative">
-                    <div class="footer-logo">
-                        <img src="images/footer_logo.png" alt="Seppo" />
-                    </div>        
-                    <div class="footer-logo-divider"></div>
-                    <div class="footer-mail">            
-                        <a href="mailto:hello@site.com">hello@cocobasic.com</a>
+        </div>
+        <header class="header" data-page="home">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="logo header_logo">
+                    <a class="d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_picture">
+                            <img src="svg/logo.svg" alt="Edison" />
+                        </span>
+                        <span class="text">
+                            <span class="brand">edison</span>
+                            <span class="text_secondary">courses</span>
+                        </span>
+                    </a>
+                </div>
+                <button
+                    class="header_trigger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">Home</a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="courses.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#coursesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="coursesMenu"
+                                data-page="courses"
+                            >
+                                All Courses
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="coursesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="courses" href="courses.html" data-main="true">
+                                            All Courses
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="course" href="course.html">Course Description</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="about.html" data-page="about">About Us</a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="pricing.html" data-page="pricing">Prices</a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="journal.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#journalMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="journalMenu"
+                                data-page="journal"
+                            >
+                                Journal
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="journalMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="journal" href="journal.html" data-main="true">
+                                            Journal
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="post" href="post.html">Single Post</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                                data-page=""
+                            >
+                                Pages
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="library" href="library.html">Media library</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="events" href="events.html">Events</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="teachers" href="team.html">Teachers</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="error" href="404.html">404</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="contacts.html" data-page="contacts">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="promobar_socials d-flex align-items-center justify-content-center">
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- homepage content start -->
+        <main>
+            <!-- hero section start -->
+            <div class="underlay"></div>
+            <section class="hero">
+                <div class="container d-lg-flex align-items-center">
+                    <div class="hero_content">
+                        <h1 class="hero_content-header" data-aos="fade-up">Large educational programs</h1>
+                        <div class="hero_content-rating d-flex flex-column flex-sm-row align-items-center">
+                            <p class="text" data-aos="fade-left">Our course is rated excellent by over 42,000 people</p>
+                            <div class="wrapper" data-aos="fade-left" data-aos-delay="50">
+                                <ul class="rating d-flex align-items-center">
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="hero_content-text" data-aos="fade-up" data-aos-delay="50">
+                            Today, more than 48,000 people have already studied at our university in various fields: programming,
+                            photography, marketing and management
+                        </p>
+                        <div class="hero_content-action d-flex flex-wrap">
+                            <a class="btn btn--gradient" href="#" data-aos="fade-left">
+                                <span class="text">Try for Free</span>
+                            </a>
+                            <a class="btn btn--highlight" href="pricing.html" data-aos="fade-left" data-aos-delay="50">
+                                <span class="text">See Pricing Plans</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="footer-social-divider"></div>
-                    <div class="social-holder">
-                        <a href="#">
-                            <span class="fa fa-twitter"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-facebook"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-behance"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-dribbble"></span>
-                        </a>
-                    </div>
-
-                    <div class="copyright-holder">
-                        © 2018 Seppo HTML Template by <a href="https://cocobasic.com">CocoBasic</a>            
+                    <div class="hero_media col-lg-6">
+                        <lottie-player
+                            src="lottie/hero.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 100%"
+                            loop
+                            autoplay
+                        ></lottie-player>
                     </div>
                 </div>
-            </footer>
-        </div>
-
-        <!--Load JavaScript-->
-        <script src="js/jquery.js"></script>			                                       
-        <script src="js/jquery.sticky.js"></script>			                                       
-        <script src="js/tipper.js"></script>			                                       
-        <script src="js/jarallax.js"></script>			                                       
-        <script src="js/jarallax-element.min.js"></script>			                                       
-        <script src='js/imagesloaded.pkgd.js'></script>                
-        <script src='js/jquery.fitvids.js'></script>                
-        <script src='js/jquery.smartmenus.min.js'></script>                                 
-        <script src='js/isotope.pkgd.js'></script>                                                 
-        <script src='js/owl.carousel.min.js'></script>                          
-        <script src='js/jquery.sticky-kit.min.js'></script>                          
-        <script src='js/main.js'></script>
+            </section>
+            <!-- hero section end -->
+            <!-- features section start -->
+            <div class="features">
+                <div class="container">
+                    <ul class="features_list d-md-flex flex-wrap">
+                        <li class="features_list-item col-md-4" data-order="1" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="icon-user-graduate-solid icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">Get a certificate</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem tempus rhoncus sit tortor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="2" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="icon-globe-solid icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">All over the globe</h5>
+                                        <p class="card_main-text">
+                                            Donec urna massa, cursus venenatis ipsum et, tempus rhoncus tortor. Lorem ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="3" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="icon-headset-solid icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">Live online lectures</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- features section end -->
+            <!-- promo section start -->
+            <section class="promo">
+                <div class="container d-flex flex-column-reverse flex-lg-row justify-content-lg-end">
+                    <div class="promo_media">
+                        <lottie-player
+                            src="lottie/scene.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 100%"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                    <div class="promo_content">
+                        <h2 class="promo_content-header" data-aos="fade-left">Learn and get a profession online</h2>
+                        <p class="promo_content-text" data-aos="fade-up" data-aos-delay="50">
+                            Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus vulputate. Nunc sed nisl est. Donec non
+                            consectetur elit. Praesent accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum consequat.
+                            Quisque porta volutpat ligula sit amet varius
+                        </p>
+                        <a class="promo_content-btn btn btn--gradient" href="#" data-aos="fade-up" data-aos-delay="100">
+                            <span class="text">Try for Free</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- promo section end -->
+            <!-- about section start -->
+            <section class="about">
+                <div class="container">
+                    <div class="about_deco">
+                        <lottie-player
+                            src="lottie/wave.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 100%"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                    <div class="about_main">
+                        <div class="content">
+                            <h2 class="about_main-header" data-aos="fade-in">How does it work?</h2>
+                            <ul class="about_main-list">
+                                <li class="about_main-list_item" data-aos="fade-up">
+                                    <i class="icon-check icon"></i>
+                                    <div class="content">
+                                        <h5 class="title">4 on-line lectures with a teacher</h5>
+                                        <p class="text">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
+                                    </div>
+                                </li>
+                                <li class="about_main-list_item" data-aos="fade-up" data-aos-delay="50">
+                                    <i class="icon-check icon"></i>
+                                    <div class="content">
+                                        <h5 class="title">Subscription gives access to education materials and videos</h5>
+                                        <p class="text">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
+                                    </div>
+                                </li>
+                                <li class="about_main-list_item" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="icon-check icon"></i>
+                                    <div class="content">
+                                        <h5 class="title">
+                                            After completing the course and completing the tasks, you will receive a certificate
+                                        </h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about_review" data-aos="zoom-in">
+                        <div class="about_review-wrapper">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <h5 class="main_name">Diana Gloster</h5>
+                                <ul class="rating d-flex align-items-center">
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                </ul>
+                                <q class="main_review quote">
+                                    “Mauris tellus lorem, tempus sed nibh at, varius convallis mi. sed scelerisque odio neque a lacus. Ut
+                                    consectetur ligula. ed rhoncus sapien eget feugiat.”
+                                </q>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about section end -->
+            <!-- popular courses section start -->
+            <section class="popular">
+                <div class="container">
+                    <div class="popular_header">
+                        <h2 class="popular_header-title" data-aos="fade-up">Popular courses</h2>
+                        <p class="popular_header-text" data-aos="fade-down">
+                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Fusce faucibus nulla sed finibus egestas.
+                            Vestibulum purus magna.
+                        </p>
+                    </div>
+                    <ul class="popular_tags courses-tags d-flex flex-wrap align-items-center justify-content-center">
+                        <li class="list-item" data-aos="fade-left">
+                            <a class="tag" href="#">programming</a>
+                        </li>
+                        <li class="list-item" data-aos="fade-left" data-aos-delay="50">
+                            <a class="tag" href="#">management</a>
+                        </li>
+                        <li class="list-item" data-aos="fade-left" data-aos-delay="100">
+                            <a class="tag" href="#">art</a>
+                        </li>
+                        <li class="list-item" data-aos="fade-left" data-aos-delay="150">
+                            <a class="tag" href="#">digital marketing</a>
+                        </li>
+                        <li class="list-item" data-aos="fade-left" data-aos-delay="200">
+                            <a class="tag" href="#">game development</a>
+                        </li>
+                        <li class="list-item" data-aos="fade-left" data-aos-delay="250">
+                            <a class="tag" href="#">smm</a>
+                        </li>
+                    </ul>
+                    <ul class="popular_list d-md-flex flex-wrap">
+                        <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                            <div class="course-card_wrapper">
+                                <div class="top d-flex align-items-start">
+                                    <span class="top_icon top_icon--blue">
+                                        <i class="icon-code-solid icon"></i>
+                                    </span>
+                                    <div class="wrapper d-flex flex-column">
+                                        <h5 class="top_title">Computer Programming Basic</h5>
+                                        <ul class="rating d-flex align-items-center">
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                        </ul>
+                                        <span class="top_author">by Adrian Dawson school</span>
+                                        <span class="top_details">48 lectures ( 280 Hours)</span>
+                                    </div>
+                                </div>
+                                <div class="pricing">
+                                    <span class="pricing_price h5">$120 all course / $20 per month</span>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="bottom_list">
+                                        <li class="bottom_list-item d-flex align-items-start">
+                                            <i class="bottom_list-item_marker icon-circle"></i>
+                                            <p class="bottom_list-item_text">
+                                                Mauris tellus lorem, tempus sed nibh at, varius convallis mi
+                                            </p>
+                                        </li>
+                                        <li class="bottom_list-item d-flex align-items-start">
+                                            <i class="bottom_list-item_marker icon-circle"></i>
+                                            <p class="bottom_list-item_text">
+                                                Aenean tristique sodales enim, et consequat velit. Morbi sit amet lorem sapien
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                        sign up for a course <i class="icon-arrow-right-solid icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                            <div class="course-card_wrapper">
+                                <div class="top d-flex align-items-start">
+                                    <span class="top_icon top_icon--orange">
+                                        <i class="icon-css3 icon"></i>
+                                    </span>
+                                    <div class="wrapper d-flex flex-column">
+                                        <h5 class="top_title">Computer CSS3 Programming</h5>
+                                        <ul class="rating d-flex align-items-center">
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                        </ul>
+                                        <span class="top_author">by Adrian Dawson school</span>
+                                        <span class="top_details">48 lectures ( 280 Hours)</span>
+                                    </div>
+                                </div>
+                                <div class="pricing">
+                                    <span class="pricing_price h5">$120 all course / $20 per month</span>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="bottom_list">
+                                        <li class="bottom_list-item d-flex align-items-start">
+                                            <i class="bottom_list-item_marker icon-circle"></i>
+                                            <p class="bottom_list-item_text">
+                                                Mauris tellus lorem, tempus sed nibh at, varius convallis mi
+                                            </p>
+                                        </li>
+                                        <li class="bottom_list-item d-flex align-items-start">
+                                            <i class="bottom_list-item_marker icon-circle"></i>
+                                            <p class="bottom_list-item_text">
+                                                Aenean tristique sodales enim, et consequat velit. Morbi sit amet lorem sapien
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                        sign up for a course <i class="icon-arrow-right-solid icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="course-card_wrapper">
+                                <div class="top d-flex align-items-start">
+                                    <span class="top_icon top_icon--sky">
+                                        <i class="icon-sitemap-solid icon"></i>
+                                    </span>
+                                    <div class="wrapper d-flex flex-column">
+                                        <h5 class="top_title">Web-site Development Pro</h5>
+                                        <ul class="rating d-flex align-items-center">
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                            <li class="rating_star">
+                                                <i class="icon-star icon"></i>
+                                            </li>
+                                        </ul>
+                                        <span class="top_author">by Adrian Dawson school</span>
+                                        <span class="top_details">48 lectures ( 280 Hours)</span>
+                                    </div>
+                                </div>
+                                <div class="pricing">
+                                    <span class="pricing_price h5">$120 all course / $20 per month</span>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="bottom_list">
+                                        <li class="bottom_list-item d-flex align-items-start">
+                                            <i class="bottom_list-item_marker icon-circle"></i>
+                                            <p class="bottom_list-item_text">
+                                                Mauris tellus lorem, tempus sed nibh at, varius convallis mi
+                                            </p>
+                                        </li>
+                                        <li class="bottom_list-item d-flex align-items-start">
+                                            <i class="bottom_list-item_marker icon-circle"></i>
+                                            <p class="bottom_list-item_text">
+                                                Aenean tristique sodales enim, et consequat velit. Morbi sit amet lorem sapien
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                        sign up for a course <i class="icon-arrow-right-solid icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="popular_btn btn btn--gradient" href="courses.html">
+                        <span class="text">Learn more</span>
+                    </a>
+                </div>
+            </section>
+            <!-- popular courses section end -->
+            <!-- banner section start -->
+            <div class="banner">
+                <div class="underlay"></div>
+                <div class="container d-lg-flex align-items-center">
+                    <div class="banner_content">
+                        <h4 class="banner_content-title" data-aos="fade-up">
+                            Unlimited access to educational materials and lectures for subscribers
+                        </h4>
+                        <div class="wrapper" data-aos="fade-up" data-aos-delay="50">
+                            <a class="banner_content-btn btn btn--yellow" href="pricing.html">See pricing plans</a>
+                        </div>
+                    </div>
+                    <div class="banner_media">
+                        <picture>
+                            <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                            <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <!-- banner section end -->
+        </main>
+        <!-- homepage content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_wrapper d-sm-flex flex-wrap flex-lg-nowrap justify-content-lg-between">
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="1">
+                        <div class="logo logo--footer">
+                            <a class="d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_picture">
+                                    <img src="svg/logo.svg" alt="Edison" />
+                                </span>
+                                <span class="text">
+                                    <span class="brand">edison</span>
+                                    <span class="text_secondary">courses</span>
+                                </span>
+                            </a>
+                        </div>
+                        <p class="footer_block-text">
+                            Curabitur non libero at lorem finibus lobortis. Ut auctor egestas pretium. Proin nunc ligula, venenatis tempor
+                        </p>
+                        <ul class="footer_block-socials d-flex align-items-center">
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="wrapper d-flex flex-column">
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="mailto:example@domain.com">
+                                <i class="icon-envelope icon"></i>
+                                acadesiq@mail.com
+                            </a>
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="tel:+123456789">
+                                <i class="icon-phone-solid icon"></i>
+                                +1-202-555-0190
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="2">
+                        <h5 class="footer_block-header">Information:</h5>
+                        <ul class="footer_block-nav">
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="about.html">About This Project</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="contacts.html">Contact Us</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="courses.html">All Courses</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="journal.html">From the Blog</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="library.html">Media Library</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto m-sm-0" data-order="3">
+                        <h5 class="footer_block-header">Popular Courses:</h5>
+                        <ul class="footer_block-list">
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">Data Science Fundamentals CS with Python and SQL</a>
+                            </li>
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">AWS Certified Developer - Associate 2020</a>
+                            </li>
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">How to Draw From Beginner to Master</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="4">
+                        <h5 class="footer_block-header">Instagram:</h5>
+                        <ul class="footer_block-instagram d-grid">
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_secondary">
+                <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+                    <a class="footer_secondary-scroll" id="scrollToTop" href="#">
+                        <i class="icon-angle-up icon"></i>
+                    </a>
+                    <p class="footer_secondary-copyright">Copyright @ <span id="currentYear"></span> Edison by Merkulove</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
     </body>
 </html>
