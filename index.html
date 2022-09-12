@@ -1,779 +1,504 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Home | Edison</title>
-        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
-        <script src="https://www.youtube.com/player_api"></script>
-        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
-        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
-        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+<html dir="ltr" lang="en-US">
 
-        <link rel="stylesheet" href="css/index.min.css" />
-    </head>
-    <body>
-        <div class="promobar d-flex align-items-center">
-            <div class="container d-flex align-items-center justify-content-between">
-                <ul class="promobar_socials d-flex align-items-center">
-                    <li class="promobar_socials-item">
-                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
-                            <i class="icon-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="promobar_socials-item">
-                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
-                            <i class="icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="promobar_socials-item">
-                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
-                            <i class="icon-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-                <div class="promobar_main d-flex align-items-center">
-                    <p class="promobar_main-text">Try for free! <span class="hide">30 day Trial and Free Lectures</span></p>
-                    <a class="btn btn--yellow" href="#" id="signUpTrigger">
-                        <span>Sign Up</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <header class="header" data-page="home">
-            <div class="container d-flex flex-wrap justify-content-between align-items-center">
-                <div class="logo header_logo">
-                    <a class="d-inline-flex align-items-center" href="index.html">
-                        <span class="logo_picture">
-                            <img src="svg/logo.svg" alt="Edison" />
-                        </span>
-                        <span class="text">
-                            <span class="brand">GeNext</span>
-                            <span class="text_secondary">courses</span>
-                        </span>
-                    </a>
-                </div>
-                <button
-                    class="header_trigger"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#headerMenu"
-                    aria-controls="headerMenu"
-                >
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-                <nav class="header_nav collapse" id="headerMenu">
-                    <ul class="header_nav-list">
-                        <li class="header_nav-list_item">
-                            <a class="nav-item" href="index.html" data-page="home">Home</a>
-                        </li>
-                        <li class="header_nav-list_item dropdown">
-                            <a
-                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
-                                href="courses.html"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#coursesMenu"
-                                data-trigger="dropdown"
-                                aria-expanded="false"
-                                aria-controls="coursesMenu"
-                                data-page="courses"
-                            >
-                                All Courses
-                                <i class="icon-angle-down icon"></i>
-                            </a>
-                            <div class="dropdown-menu collapse" id="coursesMenu">
-                                <ul class="dropdown-list">
-                                    <li class="list-item" data-main="true">
-                                        <a class="dropdown-item nav-item" data-page="courses" href="courses.html" data-main="true">
-                                            All Courses
-                                        </a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="course" href="course.html">Course Description</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="header_nav-list_item">
-                            <a class="nav-item" href="about.html" data-page="about">About Us</a>
-                        </li>
-                        <li class="header_nav-list_item">
-                            <a class="nav-item" href="pricing.html" data-page="pricing">Prices</a>
-                        </li>
-                        <li class="header_nav-list_item dropdown">
-                            <a
-                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
-                                href="journal.html"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#journalMenu"
-                                data-trigger="dropdown"
-                                aria-expanded="false"
-                                aria-controls="journalMenu"
-                                data-page="journal"
-                            >
-                                Journal
-                                <i class="icon-angle-down icon"></i>
-                            </a>
-                            <div class="dropdown-menu collapse" id="journalMenu">
-                                <ul class="dropdown-list">
-                                    <li class="list-item" data-main="true">
-                                        <a class="dropdown-item nav-item" data-page="journal" href="journal.html" data-main="true">
-                                            Journal
-                                        </a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="post" href="post.html">Single Post</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="header_nav-list_item dropdown">
-                            <a
-                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
-                                href="#"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#pagesMenu"
-                                data-trigger="dropdown"
-                                aria-expanded="false"
-                                aria-controls="pagesMenu"
-                                data-page=""
-                            >
-                                Pages
-                                <i class="icon-angle-down icon"></i>
-                            </a>
-                            <div class="dropdown-menu collapse" id="pagesMenu">
-                                <ul class="dropdown-list">
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="library" href="library.html">Media library</a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="events" href="events.html">Events</a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="teachers" href="team.html">Teachers</a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="faq" href="faq.html">FAQ</a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a class="dropdown-item nav-item" data-page="error" href="404.html">404</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="header_nav-list_item">
-                            <a class="nav-item" href="contacts.html" data-page="contacts">Contact Us</a>
-                        </li>
-                    </ul>
-                    <ul class="promobar_socials d-flex align-items-center justify-content-center">
-                        <li class="promobar_socials-item">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="promobar_socials-item">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="promobar_socials-item">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- homepage content start -->
-        <main>
-            <!-- hero section start -->
-            <div class="underlay"></div>
-            <section class="hero">
-                <div class="container d-lg-flex align-items-center">
-                    <div class="hero_content">
-                        <h1 class="hero_content-header" data-aos="fade-up">Large educational programs</h1>
-                        <div class="hero_content-rating d-flex flex-column flex-sm-row align-items-center">
-                            <p class="text" data-aos="fade-left">Our course is rated excellent by over 42,000 people</p>
-                            <div class="wrapper" data-aos="fade-left" data-aos-delay="50">
-                                <ul class="rating d-flex align-items-center">
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p class="hero_content-text" data-aos="fade-up" data-aos-delay="50">
-                            Today, more than 48,000 people have already studied at our university in various fields: programming,
-                            photography, marketing and management
-                        </p>
-                        <div class="hero_content-action d-flex flex-wrap">
-                            <a class="btn btn--gradient" href="#" data-aos="fade-left">
-                                <span class="text">Try for Free</span>
-                            </a>
-                            <a class="btn btn--highlight" href="pricing.html" data-aos="fade-left" data-aos-delay="50">
-                                <span class="text">See Pricing Plans</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hero_media col-lg-6">
-                        <lottie-player
-                            src="lottie/hero.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 100%; height: 100%"
-                            loop
-                            autoplay
-                        ></lottie-player>
-                    </div>
-                </div>
-            </section>
-            <!-- hero section end -->
-            <!-- features section start -->
-            <div class="features">
-                <div class="container">
-                    <ul class="features_list d-md-flex flex-wrap">
-                        <li class="features_list-item col-md-4" data-order="1" data-aos="fade-up">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="card_media">
-                                        <i class="icon-user-graduate-solid icon"></i>
-                                    </div>
-                                    <div class="card_main">
-                                        <h5 class="card_main-title">Get a certificate</h5>
-                                        <p class="card_main-text">
-                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem tempus rhoncus sit tortor.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features_list-item col-md-4" data-order="2" data-aos="fade-up">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="card_media">
-                                        <i class="icon-globe-solid icon"></i>
-                                    </div>
-                                    <div class="card_main">
-                                        <h5 class="card_main-title">All over the globe</h5>
-                                        <p class="card_main-text">
-                                            Donec urna massa, cursus venenatis ipsum et, tempus rhoncus tortor. Lorem ipsum dolor.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features_list-item col-md-4" data-order="3" data-aos="fade-up">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="card_media">
-                                        <i class="icon-headset-solid icon"></i>
-                                    </div>
-                                    <div class="card_main">
-                                        <h5 class="card_main-title">Live online lectures</h5>
-                                        <p class="card_main-text">
-                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- features section end -->
-            <!-- promo section start -->
-            <section class="promo">
-                <div class="container d-flex flex-column-reverse flex-lg-row justify-content-lg-end">
-                    <div class="promo_media">
-                        <lottie-player
-                            src="lottie/scene.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 100%; height: 100%"
-                            loop
-                            autoplay
-                        ></lottie-player>
-                    </div>
-                    <div class="promo_content">
-                        <h2 class="promo_content-header" data-aos="fade-left">Learn and get a profession online</h2>
-                        <p class="promo_content-text" data-aos="fade-up" data-aos-delay="50">
-                            Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus vulputate. Nunc sed nisl est. Donec non
-                            consectetur elit. Praesent accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum consequat.
-                            Quisque porta volutpat ligula sit amet varius
-                        </p>
-                        <a class="promo_content-btn btn btn--gradient" href="#" data-aos="fade-up" data-aos-delay="100">
-                            <span class="text">Try for Free</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <!-- promo section end -->
-            <!-- about section start -->
-            <section class="about">
-                <div class="container">
-                    <div class="about_deco">
-                        <lottie-player
-                            src="lottie/wave.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 100%; height: 100%"
-                            loop
-                            autoplay
-                        ></lottie-player>
-                    </div>
-                    <div class="about_main">
-                        <div class="content">
-                            <h2 class="about_main-header" data-aos="fade-in">How does it work?</h2>
-                            <ul class="about_main-list">
-                                <li class="about_main-list_item" data-aos="fade-up">
-                                    <i class="icon-check icon"></i>
-                                    <div class="content">
-                                        <h5 class="title">4 on-line lectures with a teacher</h5>
-                                        <p class="text">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
-                                    </div>
-                                </li>
-                                <li class="about_main-list_item" data-aos="fade-up" data-aos-delay="50">
-                                    <i class="icon-check icon"></i>
-                                    <div class="content">
-                                        <h5 class="title">Subscription gives access to education materials and videos</h5>
-                                        <p class="text">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
-                                    </div>
-                                </li>
-                                <li class="about_main-list_item" data-aos="fade-up" data-aos-delay="100">
-                                    <i class="icon-check icon"></i>
-                                    <div class="content">
-                                        <h5 class="title">
-                                            After completing the course and completing the tasks, you will receive a certificate
-                                        </h5>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="about_review" data-aos="zoom-in">
-                        <div class="about_review-wrapper">
-                            <div class="media">
-                                <picture>
-                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                </picture>
-                            </div>
-                            <div class="main">
-                                <h5 class="main_name">Diana Gloster</h5>
-                                <ul class="rating d-flex align-items-center">
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                    <li class="rating_star">
-                                        <i class="icon-star icon"></i>
-                                    </li>
-                                </ul>
-                                <q class="main_review quote">
-                                    “Mauris tellus lorem, tempus sed nibh at, varius convallis mi. sed scelerisque odio neque a lacus. Ut
-                                    consectetur ligula. ed rhoncus sapien eget feugiat.”
-                                </q>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- about section end -->
-            <!-- popular courses section start -->
-            <section class="popular">
-                <div class="container">
-                    <div class="popular_header">
-                        <h2 class="popular_header-title" data-aos="fade-up">Popular courses</h2>
-                        <p class="popular_header-text" data-aos="fade-down">
-                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Fusce faucibus nulla sed finibus egestas.
-                            Vestibulum purus magna.
-                        </p>
-                    </div>
-                    <ul class="popular_tags courses-tags d-flex flex-wrap align-items-center justify-content-center">
-                        <li class="list-item" data-aos="fade-left">
-                            <a class="tag" href="#">programming</a>
-                        </li>
-                        <li class="list-item" data-aos="fade-left" data-aos-delay="50">
-                            <a class="tag" href="#">management</a>
-                        </li>
-                        <li class="list-item" data-aos="fade-left" data-aos-delay="100">
-                            <a class="tag" href="#">art</a>
-                        </li>
-                        <li class="list-item" data-aos="fade-left" data-aos-delay="150">
-                            <a class="tag" href="#">digital marketing</a>
-                        </li>
-                        <li class="list-item" data-aos="fade-left" data-aos-delay="200">
-                            <a class="tag" href="#">game development</a>
-                        </li>
-                        <li class="list-item" data-aos="fade-left" data-aos-delay="250">
-                            <a class="tag" href="#">smm</a>
-                        </li>
-                    </ul>
-                    <ul class="popular_list d-md-flex flex-wrap">
-                        <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up">
-                            <div class="course-card_wrapper">
-                                <div class="top d-flex align-items-start">
-                                    <span class="top_icon top_icon--blue">
-                                        <i class="icon-code-solid icon"></i>
-                                    </span>
-                                    <div class="wrapper d-flex flex-column">
-                                        <h5 class="top_title">Computer Programming Basic</h5>
-                                        <ul class="rating d-flex align-items-center">
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                        </ul>
-                                        <span class="top_author">by Adrian Dawson school</span>
-                                        <span class="top_details">48 lectures ( 280 Hours)</span>
-                                    </div>
-                                </div>
-                                <div class="pricing">
-                                    <span class="pricing_price h5">$120 all course / $20 per month</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul class="bottom_list">
-                                        <li class="bottom_list-item d-flex align-items-start">
-                                            <i class="bottom_list-item_marker icon-circle"></i>
-                                            <p class="bottom_list-item_text">
-                                                Mauris tellus lorem, tempus sed nibh at, varius convallis mi
-                                            </p>
-                                        </li>
-                                        <li class="bottom_list-item d-flex align-items-start">
-                                            <i class="bottom_list-item_marker icon-circle"></i>
-                                            <p class="bottom_list-item_text">
-                                                Aenean tristique sodales enim, et consequat velit. Morbi sit amet lorem sapien
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
-                                        sign up for a course <i class="icon-arrow-right-solid icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-                            <div class="course-card_wrapper">
-                                <div class="top d-flex align-items-start">
-                                    <span class="top_icon top_icon--orange">
-                                        <i class="icon-css3 icon"></i>
-                                    </span>
-                                    <div class="wrapper d-flex flex-column">
-                                        <h5 class="top_title">Computer CSS3 Programming</h5>
-                                        <ul class="rating d-flex align-items-center">
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                        </ul>
-                                        <span class="top_author">by Adrian Dawson school</span>
-                                        <span class="top_details">48 lectures ( 280 Hours)</span>
-                                    </div>
-                                </div>
-                                <div class="pricing">
-                                    <span class="pricing_price h5">$120 all course / $20 per month</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul class="bottom_list">
-                                        <li class="bottom_list-item d-flex align-items-start">
-                                            <i class="bottom_list-item_marker icon-circle"></i>
-                                            <p class="bottom_list-item_text">
-                                                Mauris tellus lorem, tempus sed nibh at, varius convallis mi
-                                            </p>
-                                        </li>
-                                        <li class="bottom_list-item d-flex align-items-start">
-                                            <i class="bottom_list-item_marker icon-circle"></i>
-                                            <p class="bottom_list-item_text">
-                                                Aenean tristique sodales enim, et consequat velit. Morbi sit amet lorem sapien
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
-                                        sign up for a course <i class="icon-arrow-right-solid icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="course-card_wrapper">
-                                <div class="top d-flex align-items-start">
-                                    <span class="top_icon top_icon--sky">
-                                        <i class="icon-sitemap-solid icon"></i>
-                                    </span>
-                                    <div class="wrapper d-flex flex-column">
-                                        <h5 class="top_title">Web-site Development Pro</h5>
-                                        <ul class="rating d-flex align-items-center">
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                            <li class="rating_star">
-                                                <i class="icon-star icon"></i>
-                                            </li>
-                                        </ul>
-                                        <span class="top_author">by Adrian Dawson school</span>
-                                        <span class="top_details">48 lectures ( 280 Hours)</span>
-                                    </div>
-                                </div>
-                                <div class="pricing">
-                                    <span class="pricing_price h5">$120 all course / $20 per month</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul class="bottom_list">
-                                        <li class="bottom_list-item d-flex align-items-start">
-                                            <i class="bottom_list-item_marker icon-circle"></i>
-                                            <p class="bottom_list-item_text">
-                                                Mauris tellus lorem, tempus sed nibh at, varius convallis mi
-                                            </p>
-                                        </li>
-                                        <li class="bottom_list-item d-flex align-items-start">
-                                            <i class="bottom_list-item_marker icon-circle"></i>
-                                            <p class="bottom_list-item_text">
-                                                Aenean tristique sodales enim, et consequat velit. Morbi sit amet lorem sapien
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
-                                        sign up for a course <i class="icon-arrow-right-solid icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class="popular_btn btn btn--gradient" href="courses.html">
-                        <span class="text">Learn more</span>
-                    </a>
-                </div>
-            </section>
-            <!-- popular courses section end -->
-            <!-- banner section start -->
-            <div class="banner">
-                <div class="underlay"></div>
-                <div class="container d-lg-flex align-items-center">
-                    <div class="banner_content">
-                        <h4 class="banner_content-title" data-aos="fade-up">
-                            Unlimited access to educational materials and lectures for subscribers
-                        </h4>
-                        <div class="wrapper" data-aos="fade-up" data-aos-delay="50">
-                            <a class="banner_content-btn btn btn--yellow" href="pricing.html">See pricing plans</a>
-                        </div>
-                    </div>
-                    <div class="banner_media">
-                        <picture>
-                            <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                            <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                        </picture>
-                    </div>
-                </div>
-            </div>
-            <!-- banner section end -->
-        </main>
-        <!-- homepage content end -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer_wrapper d-sm-flex flex-wrap flex-lg-nowrap justify-content-lg-between">
-                    <div class="footer_block col-sm-6 col-lg-auto" data-order="1">
-                        <div class="logo logo--footer">
-                            <a class="d-inline-flex align-items-center" href="index.html">
-                                <span class="logo_picture">
-                                    <img src="svg/logo.svg" alt="Edison" />
-                                </span>
-                                <span class="text">
-                                    <span class="brand">edison</span>
-                                    <span class="text_secondary">courses</span>
-                                </span>
-                            </a>
-                        </div>
-                        <p class="footer_block-text">
-                            Curabitur non libero at lorem finibus lobortis. Ut auctor egestas pretium. Proin nunc ligula, venenatis tempor
-                        </p>
-                        <ul class="footer_block-socials d-flex align-items-center">
-                            <li class="footer_block-socials_item">
-                                <a class="link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="footer_block-socials_item">
-                                <a class="link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="footer_block-socials_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="wrapper d-flex flex-column">
-                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="mailto:example@domain.com">
-                                <i class="icon-envelope icon"></i>
-                                acadesiq@mail.com
-                            </a>
-                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="tel:+123456789">
-                                <i class="icon-phone-solid icon"></i>
-                                +1-202-555-0190
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer_block col-sm-6 col-lg-auto" data-order="2">
-                        <h5 class="footer_block-header">Information:</h5>
-                        <ul class="footer_block-nav">
-                            <li class="footer_block-nav_item">
-                                <a class="link" href="about.html">About This Project</a>
-                            </li>
-                            <li class="footer_block-nav_item">
-                                <a class="link" href="contacts.html">Contact Us</a>
-                            </li>
-                            <li class="footer_block-nav_item">
-                                <a class="link" href="courses.html">All Courses</a>
-                            </li>
-                            <li class="footer_block-nav_item">
-                                <a class="link" href="journal.html">From the Blog</a>
-                            </li>
-                            <li class="footer_block-nav_item">
-                                <a class="link" href="library.html">Media Library</a>
-                            </li>
-                            <li class="footer_block-nav_item">
-                                <a class="link" href="faq.html">FAQ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer_block col-sm-6 col-lg-auto m-sm-0" data-order="3">
-                        <h5 class="footer_block-header">Popular Courses:</h5>
-                        <ul class="footer_block-list">
-                            <li class="footer_block-list_item d-flex align-items-baseline">
-                                <span class="marker"></span>
-                                <a class="link" href="course.html">Data Science Fundamentals CS with Python and SQL</a>
-                            </li>
-                            <li class="footer_block-list_item d-flex align-items-baseline">
-                                <span class="marker"></span>
-                                <a class="link" href="course.html">AWS Certified Developer - Associate 2020</a>
-                            </li>
-                            <li class="footer_block-list_item d-flex align-items-baseline">
-                                <span class="marker"></span>
-                                <a class="link" href="course.html">How to Draw From Beginner to Master</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer_block col-sm-6 col-lg-auto" data-order="4">
-                        <h5 class="footer_block-header">Instagram:</h5>
-                        <ul class="footer_block-instagram d-grid">
-                            <li class="footer_block-instagram_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="footer_block-instagram_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="footer_block-instagram_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="footer_block-instagram_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="footer_block-instagram_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="footer_block-instagram_item">
-                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
-                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                    </picture>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_secondary">
-                <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
-                    <a class="footer_secondary-scroll" id="scrollToTop" href="#">
-                        <i class="icon-angle-up icon"></i>
-                    </a>
-                    <p class="footer_secondary-copyright">Copyright @ <span id="currentYear"></span> Edison by Merkulove</p>
-                </div>
-            </div>
-        </footer>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <script src="js/common.min.js"></script>
-    </body>
+<head>
+	<!-- Document Meta
+    ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--IE Compatibility Meta-->
+	<meta name="author" content="zytheme" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Multi-purpose Business html5 landing page">
+	<link href="assets/images/favicon/favicon.png" rel="icon">
+
+	<!-- Fonts
+    ============================================= -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+
+	<!-- Stylesheets
+    ============================================= -->
+	<link href="assets/css/external.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="assets/css/style.css" rel="stylesheet">-->
+	<link rel="stylesheet/less" type="text/css" href="assets/less/style.less" />
+	<script src="assets/js/less.js" type="text/javascript"></script>
+
+
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Document Title
+    ============================================= -->
+	<title>StoryX | Home</title>
+</head>
+
+<body class="body-scroll">
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="wrapper clearfix">
+
+		<!-- Header
+        ============================================= -->
+		<header id="navbar-spy" class="header header-1 header-transparent header-fixed">
+
+			<nav id="primary-menu" class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="logo" href="index.html">
+							<img class="logo-dark" src="assets/images/logo/logo-dark.png" alt="appy Logo">
+							<img class="logo-light" src="assets/images/logo/logo-light.png" alt="appy Logo">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+						<ul class="nav navbar-nav nav-pos-right navbar-left nav-split">
+							<li class="active"><a data-scroll="scrollTo" href="#slider">home</a>
+							</li>
+
+							<li><a data-scroll="scrollTo" href="#about">about</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#recent-work">our work</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#services">services</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#foundation">foundation</a>
+							</li>
+
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</nav>
+
+		</header>
+
+		<!-- Slider #1
+		============================================= -->
+		<section id="slider" class="section slider text-center">
+			<div class="slide--item">
+				<div class="bg-section">
+					<img src="assets/images/background/bg-1.jpg" alt="bg">
+				</div>
+				<div class="container">
+					<div class="row row-content mt-30">
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-1 pt-100">
+							<div class="slide--headline">We build <span class="typed-text"
+									data-typed-string="sustainable, accesible, responsive, beautiful, websites for purpose driven businesses"></span>
+							</div>
+							<div class="slide--bio">We design and build sustainable, accessible websites with a great
+								user experience.</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 wow fadeInUp"
+							data-wow-duration="1s">
+							<div class="slide--action">
+								<form class="mb-0 form-action">
+									<div class="input-group">
+										<input type="email" class="form-control" placeholder="E-mail address">
+										<span class="input-group-btn">
+											<input type="submit" class="btn btn--primary" value="register"
+												name="Get Started">
+										</span>
+									</div>
+									<!-- .input-group end -->
+								</form>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="1s">
+							<!-- <div class="slide--holder mt-100">
+								<img class="img-responsive center-block" src="assets/images/mockup/1.png" alt="screens">
+							</div> -->
+						</div>
+					</div>
+					<!-- .row end -->
+				</div>
+				<!-- .container end -->
+			</div>
+			<!-- .slide-item end -->
+
+		</section>
+		<!-- #slider end -->
+
+
+
+
+
+
+		<!-- about -->
+		<!-- Feature #2
+		============================================= -->
+		<section id="about" class="section feature feature-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-5">
+						<div class="wow fadeInUp" data-wow-duration="1s">
+							<!-- <i class="lnr lnr-rocket"></i> -->
+
+							<h2 class="">About StoryX</h2>
+							<div class="divider--line"></div>
+							<p class="">StoryX is a sustainable technology start-up working with a wide range of
+								purpose-driven organisations.
+							</p>
+							<p class="">We’re experts at building unique, affordable websites tailored to your specific
+								needs, with a core specialism in low carbon footprint web development.
+							</p>
+							<p class="">Having a low carbon website is not only great for the planet, it's great for
+								your organisation too. Website carbon emissions have a direct relationship to overall
+								website size, page load times and resources used. Improving these areas is great for
+								search engine ranking, customer experience and is shown to decrease bounce rates,
+								improving sales and conversions.
+							</p>
+						</div>
+					</div><!-- .col-md-6 end -->
+					<div class="col-xs-12 col-sm-6 col-md-7 wow fadeInUp">
+						<img class="img-responsive center-block" src="assets/images/storyx/storyx1.png" alt="device" />
+					</div><!-- .col-md-6 end -->
+				</div><!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</section>
+		<!-- #feature2 end -->
+		<!-- Divider
+		============================================= -->
+		<section class="pt-0 pb-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<hr class="feature-divider">
+					</div>
+				</div><!-- .row end -->
+			</div><!-- .container end -->
+		</section>
+
+
+
+		<!-- Our Recent Work -->
+		<!-- Feature #1
+		============================================= -->
+		<section id="recent-work" class="section feature text-center">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-80 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">Our Recent Work</h2>
+							<p class="heading--desc">we shows only the best websites, portfolios ans landing pages built
+								completely with passion, simplicity & creativity !</p>
+							<div class="divider--line divider--center"></div>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+
+
+				<div class="row">
+					<!-- Panel #1 -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+							<a href="project-nhs.html">
+								<img src="assets/images/work/nhs.png" alt="thumb">
+								<h4>NHS #DoingOurBit</h4>
+								<div class="category">
+									<span>Web Design</span>
+									<!-- <span>Branding</span> -->
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Panel #1 -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+							<a href="project-nhs.html">
+								<img src="assets/images/work/butterfly.png" alt="thumb">
+								<h4>NHS #DoingOurBit</h4>
+								<div class="category">
+									<span>Web Design</span>
+									<!-- <span>Branding</span> -->
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Panel #1 -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+							<a href="project-nhs.html">
+								<img src="assets/images/work/golf.png" alt="thumb">
+								<h4>NHS #DoingOurBit</h4>
+								<div class="category">
+									<span>Web Design</span>
+									<!-- <span>Branding</span> -->
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
+
+		<!-- Services #1
+		============================================= -->
+		<section id="services" class="section feature text-center bg-white">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-80 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">Our Services</h2>
+							<p class="heading--desc">seamlessly driving revenue through connecting your services to your
+								customers.</p>
+							<div class="divider--line divider--center"></div>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+
+
+
+
+
+				<!-- .row end -->
+				<div class="row">
+					<!-- Panel #1 -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+							<div class="feature--icon">
+								<i class="lnr lnr-screen"></i>
+							</div>
+							<div class="feature--content">
+								<h3>Content Planning</h3>
+								<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+									velit....</p>
+							</div>
+						</div>
+						<!-- .feature-panel end -->
+					</div>
+					<!-- .col-md-4 end -->
+
+					<!-- Panel #2 -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+							<div class="feature--icon">
+								<i class="lnr lnr-chart-bars"></i>
+							</div>
+							<div class="feature--content">
+								<h3>Website Development</h3>
+								<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+									velit....</p>
+							</div>
+						</div>
+						<!-- .feature-panel end -->
+					</div>
+					<!-- .col-md-4 end -->
+
+					<!-- Panel #3 -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+							<div class="feature--icon">
+								<i class="lnr lnr-pie-chart"></i>
+							</div>
+							<div class="feature--content">
+								<h3>Hosting</h3>
+								<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+									velit....</p>
+							</div>
+						</div>
+						<!-- .feature-panel end -->
+					</div>
+					<!-- .col-md-4 end -->
+				</div>
+			</div>
+
+
+		</section>
+
+
+
+
+
+		<!-- Start Banner 
+    ============================================= -->
+		<!-- Slider #1
+		============================================= -->
+		<section class="section slider text-center">
+			<div class="slide--item">
+				<div class="bg-section">
+					<img src="assets/images/background/matrix.jpg" alt="bg">
+				</div>
+				<div class="container">
+					<div class="row row-content mt-30">
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-1 pt-100">
+							<div class="slide--headline">A low carbon footprint website is how you can do your bit to
+								help our planet.
+							</div>
+
+							<div class="col-xs-12 col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="1s">
+								<!-- <div class="slide--holder mt-100">
+								<img class="img-responsive center-block" src="assets/images/mockup/1.png" alt="screens">
+							</div> -->
+							</div>
+						</div>
+						<!-- .row end -->
+					</div>
+					<!-- .container end -->
+				</div>
+				<!-- .slide-item end -->
+
+		</section>
+		<!-- #slider end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- about -->
+		<!-- Feature #2
+		============================================= -->
+
+		<!-- Divider
+		============================================= -->
+		<section class="pt-0 pb-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<hr class="feature-divider">
+					</div>
+				</div><!-- .row end -->
+			</div><!-- .container end -->
+		</section>
+		<!-- Feature #2
+		============================================= -->
+		<section id="foundation" class="section feature bg-white feature-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-7 wow fadeInUp">
+						<img class="img-responsive center-block" src="assets/images/storyx/storyx2.png" alt="device" />
+					</div><!-- .col-md-6 end -->
+					<div class="col-xs-12 col-sm-6 col-md-5">
+						<div class="wow fadeInUp" data-wow-duration="1s">
+							<i class="lnr lnr-pointer-up"></i>
+							<div class="divider--line"></div>
+							<h2 class="">The StoryX Foundation</h2>
+							<p class="">A quality website is fundamental to every successful business, charity, social
+								enterprise and good cause. Improving your digital presence can be transformational, but
+								it’s really tough to secure funding in this area. The StoryX Foundation exists to change
+								that, offering our services for free for small charities, community groups, and good
+								causes.</p>
+						</div>
+					</div><!-- .col-md-6 end -->
+
+				</div><!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</section>
+		<!-- #feature2 end -->
+
+		<!-- Newsletter #1
+		============================================= -->
+		<section id="newsletter" class="section newsletter text-center">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-60 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">Subscribe to get updates</h2>
+							<p class="heading--desc">Lorem ipsum dolor amet, consectetur adipisice elite sede
+								eiusmod
+								tempor incidide labeore dolore magna</p>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+				<!-- .row end -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+						<form class="mb-0 form-action wow fadeInUp" data-wow-duration="1s">
+							<div class="input-group">
+								<input type="email" class="form-control" placeholder="E-mail address">
+								<span class="input-group-btn">
+									<input type="submit" class="btn btn--primary" value="Subscribe" name="submit">
+								</span>
+							</div>
+							<!-- .input-group end -->
+						</form>
+					</div>
+					<!-- .col-md-12 end -->
+				</div>
+				<!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</section>
+		<!-- #newsletter end -->
+
+		<!-- Footer 
+		============================================= -->
+		<footer id="footer" class="footer footer-5">
+			<!-- Copyrights
+			============================================= -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<div class="footer--copyright">
+							<span>&copy; 2022 </span> <a href="https://www.storyx.co.uk/">StoryX </a><i
+								class="fa fa-heart"></i>
+						</div>
+					</div><!-- .col-md-6 end -->
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<div class="footer--social text-right">
+							<a class="account-twitter" href="#"><i class="fa fa-twitter"></i></a>
+							<a class="account-facebook" href="#"><i class="fa fa-facebook"></i></a>
+							<a class="account-vimeo" href="#"><i class="fa fa-vimeo"></i></a>
+							<a class="account-instagram" href="#"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div><!-- .col-md-6 end -->
+
+
+				</div><!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</footer>
+	</div>
+	<!-- #wrapper end -->
+
+	<!-- Footer Scripts
+============================================= -->
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+
 </html>
