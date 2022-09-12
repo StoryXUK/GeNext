@@ -1787,10 +1787,12 @@ section {
 }
 
 .header-light .navbar .logo-dark {
+	padding-top: 15px;
 	display: inline-block;
 }
 
 .header-light .navbar .logo-light {
+	padding-top: 15px;
 	display: none;
 }
 
